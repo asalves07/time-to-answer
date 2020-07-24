@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  namespace :admins_backoffice do
+    get 'admins/index'
+  end
   get 'users_backoffice/welcome'
   
   namespace :site do

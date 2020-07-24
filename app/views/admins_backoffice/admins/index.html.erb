@@ -1,0 +1,62 @@
+<div class="container-fluid">
+  <!-- DataTales Example -->
+  <div class="card shadow mb-4">
+    <div class="card-header py-3">
+      <h6 class="m-0 font-weight-bold text-primary">Listando Administradores</h6>
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <div class="row"><div class="col-sm-12">
+          <table class="table table-bordered dataTable" id="dataTable" width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info" style="width: 100%;">
+            <thead>
+              <tr role="row">
+                <th style="width:75px" class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 134px;">#</th>
+                <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 208px;">Email</th>
+                <th style="width:75px" class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 208px;"></th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <th style="width:75px" rowspan="1" colspan="1">#</th>
+                <th rowspan="1" colspan="1">Email</th>
+                <th style="width:75px" rowspan="1" colspan="1"></th>
+              </tr>
+            </tfoot>
+            <tbody>
+              <% @admins.each do |admin| %>
+                <tr role="row" class="odd">
+                  <td style="width:75px" ><%= admin.id %></td>
+                  <td><%= admin.email %></td>
+                  <td style="width:75px">
+                    <a href="#" class="btn btn-primary btn-circle btn-sm">
+                      <i class="fas fa-edit"></i>
+                    </a>
+                    <a href="#" class="btn btn-danger btn-circle btn-sm">
+                      <i class="fas fa-trash"></i>
+                    </a>
+                  </td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-7">
+          <div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate">
+            <ul class="pagination">
+              <li class="paginate_button page-item previous disabled" id="dataTable_previous">
+                <a href="#" aria-controls="dataTable" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
+              </li>
+              <li class="paginate_button page-item active">
+                <a href="#" aria-controls="dataTable" data-dt-idx="1" tabindex="0" class="page-link">1</a>
+              </li>
+              <li class="paginate_button page-item next disabled" id="dataTable_next">
+                <a href="#" aria-controls="dataTable" data-dt-idx="2" tabindex="0" class="page-link">Next</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
