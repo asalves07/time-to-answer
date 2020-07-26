@@ -38,7 +38,7 @@
         <!-- Nav Item - Dashboard -->
         <li class="nav-item">
           <%= link_to admins_backoffice_welcome_index_path, class: "nav-link" do %>
-            <i class="fas fa-users fa-tachometer-alt"></i> <span>Dashboard</span>
+            <i class="fas fa-dashboard fa-tachometer-alt"></i> <span>Dashboard</span>
           <% end %>
         </li>
 
@@ -156,6 +156,16 @@
     <%= javascript_include_tag 'application' %>
     <%= javascript_include_tag 'admins_backoffice' %>
     
+    <% if notice %>
+      <%= javascript_tag do %>
+        $.bootstrapGrowl("<%= notice %>", {
+          type: 'success', // (null, 'info', 'error', 'success')
+          align: 'right', // ('left', 'right', or 'center')
+          allow_dismiss: true,
+          stackup_spacing: 10 // spacing between consecutively stacked growls.
+        });
+      <% end %>
+    <% end %>
 
   </body>
 

@@ -9132,3 +9132,1426 @@ Processing by AdminsBackoffice::AdminsController#edit as HTML
 Completed 200 OK in 110ms (Views: 105.3ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for ::1 at 2020-07-25 23:03:12 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Site::WelcomeController#index as HTML
+  Rendering site/welcome/index.html.erb within layouts/site
+  Rendered site/welcome/index.html.erb within layouts/site (9.0ms)
+Completed 200 OK in 1007ms (Views: 997.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins_backoffice/welcome/index" for ::1 at 2020-07-25 23:03:23 -0300
+Processing by AdminsBackoffice::WelcomeController#index as HTML
+Completed 401 Unauthorized in 62ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for ::1 at 2020-07-25 23:03:24 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering admins/sessions/new.html.erb within layouts/application
+  Rendered admins/shared/_links.html.erb (3.9ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (43.3ms)
+Completed 200 OK in 91ms (Views: 76.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/admins/sign_in" for ::1 at 2020-07-25 23:04:03 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"db15hqxKkZrbmPiijfZ2xGQnguejxv1mj6RInWy8D+MVwdhl9LGHpaFOeVVNPsYR2t+SGxmRZhYYvuVc+ZdG6Q==", "admin"=>{"email"=>"andre@adm.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (29.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "andre@adm.com"], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 111ms (ActiveRecord: 29.2ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"db15hqxKkZrbmPiijfZ2xGQnguejxv1mj6RInWy8D+MVwdhl9LGHpaFOeVVNPsYR2t+SGxmRZhYYvuVc+ZdG6Q==", "admin"=>{"email"=>"andre@adm.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering admins/sessions/new.html.erb within layouts/application
+  Rendered admins/shared/_links.html.erb (1.4ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 354ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for ::1 at 2020-07-25 23:04:08 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ry7Mx8LHbeQ9duCXnsjtS7sBRfWRiQAU+ImFC9Z1FV/PUm0kmjx720egYWBeAF2eBflVCSvem2RvkyjKQ15cVQ==", "admin"=>{"email"=>"andre@adm.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "andre@adm.com"], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.2ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ry7Mx8LHbeQ9duCXnsjtS7sBRfWRiQAU+ImFC9Z1FV/PUm0kmjx720egYWBeAF2eBflVCSvem2RvkyjKQ15cVQ==", "admin"=>{"email"=>"andre@adm.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering admins/sessions/new.html.erb within layouts/application
+  Rendered admins/shared/_links.html.erb (1.7ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 316ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for ::1 at 2020-07-25 23:04:16 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cKcQU+e1rdlAK4F7TUCQJrWvFisdfPzuBRFFj3k0rIYQ27Gwv0675jr9AIyNiCDzC1cG16crZ56SC+hO7B/ljA==", "admin"=>{"email"=>"andre@adm.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "andre@adm.com"], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.1ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cKcQU+e1rdlAK4F7TUCQJrWvFisdfPzuBRFFj3k0rIYQ27Gwv0675jr9AIyNiCDzC1cG16crZ56SC+hO7B/ljA==", "admin"=>{"email"=>"andre@adm.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering admins/sessions/new.html.erb within layouts/application
+  Rendered admins/shared/_links.html.erb (1.4ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 308ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for ::1 at 2020-07-25 23:04:34 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GHgyR+jRKk8LxJEsmJTp75iOJRl/VKYqFuuXM8Uk9el4BJOksCo8cHESENtYXFk6JnY15cUDPVqB8TryUA+84w==", "admin"=>{"email"=>"andre@adm.com.r", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "andre@adm.com.r"], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.2ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GHgyR+jRKk8LxJEsmJTp75iOJRl/VKYqFuuXM8Uk9el4BJOksCo8cHESENtYXFk6JnY15cUDPVqB8TryUA+84w==", "admin"=>{"email"=>"andre@adm.com.r", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering admins/sessions/new.html.erb within layouts/application
+  Rendered admins/shared/_links.html.erb (1.4ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 311ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for ::1 at 2020-07-25 23:04:41 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yVsBjpSXd7QHt57vP+88k1wRR7YYTJ5AbNSrJEa543qpJ6BtzGxhi31hHxj/J4xG4ulXSqIbBTD7zgbl05KqcA==", "admin"=>{"email"=>"andre@adm.com.br", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "andre@adm.com.br"], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.1ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yVsBjpSXd7QHt57vP+88k1wRR7YYTJ5AbNSrJEa543qpJ6BtzGxhi31hHxj/J4xG4ulXSqIbBTD7zgbl05KqcA==", "admin"=>{"email"=>"andre@adm.com.br", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering admins/sessions/new.html.erb within layouts/application
+  Rendered admins/shared/_links.html.erb (0.9ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 311ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (25.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (455.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (98.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateAdmins (20200722022658)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "admins" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200722022658_devise_create_admins.rb:5
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_email" ON "admins" ("email")[0m
+  ↳ db/migrate/20200722022658_devise_create_admins.rb:39
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_reset_password_token" ON "admins" ("reset_password_token")[0m
+  ↳ db/migrate/20200722022658_devise_create_admins.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200722022658"]]
+  ↳ bin/rails:9
+  [1m[35m (95.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateUsers (20200723020232)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200723020232_devise_create_users.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  ↳ db/migrate/20200723020232_devise_create_users.rb:39
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  ↳ db/migrate/20200723020232_devise_create_users.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200723020232"]]
+  ↳ bin/rails:9
+  [1m[35m (103.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-07-26 02:05:03.521864"], ["updated_at", "2020-07-26 02:05:03.521864"]]
+  ↳ bin/rails:9
+  [1m[35m (54.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:21
+  [1m[36mAdmin Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "admins" WHERE "admins"."email" = ? LIMIT ?[0m  [["email", "admin@admin.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:21
+  [1m[36mAdmin Create (0.4ms)[0m  [1m[32mINSERT INTO "admins" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "admin@admin.com"], ["encrypted_password", "$2a$12$Ikud3AQblGFVaYMB0PpXhu/YVOf57CBMBPdWkZBTJmhwvftfRYLIS"], ["created_at", "2020-07-26 02:05:05.316521"], ["updated_at", "2020-07-26 02:05:05.316521"]]
+  ↳ lib/tasks/dev.rake:21
+  [1m[35m (79.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:31
+  [1m[36mAdmin Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "admins" WHERE "admins"."email" = ? LIMIT ?[0m  [["email", "latoria_hickle@bauch.name"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:31
+  [1m[36mAdmin Create (0.3ms)[0m  [1m[32mINSERT INTO "admins" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "latoria_hickle@bauch.name"], ["encrypted_password", "$2a$12$GSzhNKQQwS.SwirtZk2zaO5EjrjP2h7lyU/XG14J.KDLDXUE.T/Ju"], ["created_at", "2020-07-26 02:05:07.304907"], ["updated_at", "2020-07-26 02:05:07.304907"]]
+  ↳ lib/tasks/dev.rake:31
+  [1m[35m (98.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:31
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:31
+  [1m[36mAdmin Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "admins" WHERE "admins"."email" = ? LIMIT ?[0m  [["email", "hai_yost@emmerich.io"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:31
+  [1m[36mAdmin Create (0.3ms)[0m  [1m[32mINSERT INTO "admins" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "hai_yost@emmerich.io"], ["encrypted_password", "$2a$12$x.lZaEOusnhJxoaAjYpAR.H.IwvTa48Of9NO1yepJijaGWacJcBui"], ["created_at", "2020-07-26 02:05:07.697207"], ["updated_at", "2020-07-26 02:05:07.697207"]]
+  ↳ lib/tasks/dev.rake:31
+  [1m[35m (84.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:31
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:31
+  [1m[36mAdmin Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "admins" WHERE "admins"."email" = ? LIMIT ?[0m  [["email", "jarvis@wyman-little.info"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:31
+  [1m[36mAdmin Create (0.3ms)[0m  [1m[32mINSERT INTO "admins" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "jarvis@wyman-little.info"], ["encrypted_password", "$2a$12$/2ROlJNAmLM.aPVset4iduhHhPMPJKSUmms7U40e3GOxLpJboi7Gu"], ["created_at", "2020-07-26 02:05:08.073443"], ["updated_at", "2020-07-26 02:05:08.073443"]]
+  ↳ lib/tasks/dev.rake:31
+  [1m[35m (52.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:31
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:31
+  [1m[36mAdmin Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "admins" WHERE "admins"."email" = ? LIMIT ?[0m  [["email", "max.zulauf@kassulke-haley.name"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:31
+  [1m[36mAdmin Create (0.3ms)[0m  [1m[32mINSERT INTO "admins" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "max.zulauf@kassulke-haley.name"], ["encrypted_password", "$2a$12$5G77Jx35Ref/TnsUHuymzeuTvbaBnTm93AfszKJ2Gw/kj2LW1L.LS"], ["created_at", "2020-07-26 02:05:08.407682"], ["updated_at", "2020-07-26 02:05:08.407682"]]
+  ↳ lib/tasks/dev.rake:31
+  [1m[35m (83.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:31
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:31
+  [1m[36mAdmin Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "admins" WHERE "admins"."email" = ? LIMIT ?[0m  [["email", "donte@fisher.net"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:31
+  [1m[36mAdmin Create (0.3ms)[0m  [1m[32mINSERT INTO "admins" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "donte@fisher.net"], ["encrypted_password", "$2a$12$CsbXGT9zsNQLtfAAMLm8C.lQfgrwmIYy4XCdpdu9MK7Gpp9oXbYgS"], ["created_at", "2020-07-26 02:05:08.780654"], ["updated_at", "2020-07-26 02:05:08.780654"]]
+  ↳ lib/tasks/dev.rake:31
+  [1m[35m (87.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:31
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:31
+  [1m[36mAdmin Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "admins" WHERE "admins"."email" = ? LIMIT ?[0m  [["email", "lazaro.bernhard@lemke.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:31
+  [1m[36mAdmin Create (0.2ms)[0m  [1m[32mINSERT INTO "admins" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "lazaro.bernhard@lemke.com"], ["encrypted_password", "$2a$12$w.jMlPGlIz9LOrIw5/tJ4eErtFFZM5A0wyiUiE7.meleyYSQV3unC"], ["created_at", "2020-07-26 02:05:09.164982"], ["updated_at", "2020-07-26 02:05:09.164982"]]
+  ↳ lib/tasks/dev.rake:31
+  [1m[35m (92.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:31
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:31
+  [1m[36mAdmin Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "admins" WHERE "admins"."email" = ? LIMIT ?[0m  [["email", "viki@considine-stanton.biz"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:31
+  [1m[36mAdmin Create (0.4ms)[0m  [1m[32mINSERT INTO "admins" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "viki@considine-stanton.biz"], ["encrypted_password", "$2a$12$E7HTB1C0xDpqmyY6LLtHMeXhh8WBJzhk49/9icoVGZUMir9/Tug/a"], ["created_at", "2020-07-26 02:05:09.545844"], ["updated_at", "2020-07-26 02:05:09.545844"]]
+  ↳ lib/tasks/dev.rake:31
+  [1m[35m (76.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:31
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:31
+  [1m[36mAdmin Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "admins" WHERE "admins"."email" = ? LIMIT ?[0m  [["email", "carter@bartoletti.co"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:31
+  [1m[36mAdmin Create (0.3ms)[0m  [1m[32mINSERT INTO "admins" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "carter@bartoletti.co"], ["encrypted_password", "$2a$12$OR46c3KNN.qk6R0Y54J4Z.iirPztW9VipMgpIn6KBOCSvxICgJTjK"], ["created_at", "2020-07-26 02:05:09.911272"], ["updated_at", "2020-07-26 02:05:09.911272"]]
+  ↳ lib/tasks/dev.rake:31
+  [1m[35m (66.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:31
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:31
+  [1m[36mAdmin Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "admins" WHERE "admins"."email" = ? LIMIT ?[0m  [["email", "shawn@barton-mueller.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:31
+  [1m[36mAdmin Create (0.3ms)[0m  [1m[32mINSERT INTO "admins" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "shawn@barton-mueller.com"], ["encrypted_password", "$2a$12$jFOQKGqZ4dFAZsCguzxI8e06TJkd2zLsht93ACD0S1i55MgF15eQS"], ["created_at", "2020-07-26 02:05:10.259812"], ["updated_at", "2020-07-26 02:05:10.259812"]]
+  ↳ lib/tasks/dev.rake:31
+  [1m[35m (73.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:31
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:31
+  [1m[36mAdmin Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "admins" WHERE "admins"."email" = ? LIMIT ?[0m  [["email", "norman@dubuque.org"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:31
+  [1m[36mAdmin Create (0.5ms)[0m  [1m[32mINSERT INTO "admins" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "norman@dubuque.org"], ["encrypted_password", "$2a$12$2ltuINusl8cPVuAxfXBCjuOO0H1xjlFmm3V3wf2WfZ4FWErLquVJu"], ["created_at", "2020-07-26 02:05:10.622430"], ["updated_at", "2020-07-26 02:05:10.622430"]]
+  ↳ lib/tasks/dev.rake:31
+  [1m[35m (64.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:31
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/dev.rake:41
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "user@user.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/dev.rake:41
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "user@user.com"], ["encrypted_password", "$2a$12$wZSQ15Wk4p2u2BZjD97w5.oVh6glShlC0KEP4aYUPbim6pvP76doK"], ["created_at", "2020-07-26 02:05:12.394292"], ["updated_at", "2020-07-26 02:05:12.394292"]]
+  ↳ lib/tasks/dev.rake:41
+  [1m[35m (69.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/dev.rake:41
+Started POST "/admins/sign_in" for ::1 at 2020-07-25 23:05:26 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"31TrfEUrie72DfwG/9f9549d7aT2L3GinubAvOG4pgG/KEqfHdCf0YzbffE/H00yMaX9WEx46tIJ/G19dJPvCw==", "admin"=>{"email"=>"adm@adm.com.br", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "adm@adm.com.br"], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 16ms (ActiveRecord: 1.4ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"31TrfEUrie72DfwG/9f9549d7aT2L3GinubAvOG4pgG/KEqfHdCf0YzbffE/H00yMaX9WEx46tIJ/G19dJPvCw==", "admin"=>{"email"=>"adm@adm.com.br", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering admins/sessions/new.html.erb within layouts/application
+  Rendered admins/shared/_links.html.erb (1.2ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 665ms (Views: 369.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for ::1 at 2020-07-25 23:05:42 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NrTWwz1af5IjorIB+mmazF4QsUsfuXTw1rIWUqLLTntWyHcgZaFprVl0M/Y6oSoZ4Oiht6Xu74BBqLuTN+AHcQ==", "admin"=>{"email"=>"adm@adm.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "adm@adm.com"], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.1ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NrTWwz1af5IjorIB+mmazF4QsUsfuXTw1rIWUqLLTntWyHcgZaFprVl0M/Y6oSoZ4Oiht6Xu74BBqLuTN+AHcQ==", "admin"=>{"email"=>"adm@adm.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering admins/sessions/new.html.erb within layouts/application
+  Rendered admins/shared/_links.html.erb (1.0ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 308ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for ::1 at 2020-07-25 23:05:52 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ta2U/06HRfZ6WnvmJUS46K5NCAZTMMecUBkOURD+5h/V0TUcFnxTyQCM+hHljAg9ELUY+ulnXOzHA6OQhdWvFQ==", "admin"=>{"email"=>"adm@adm.com.br", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "adm@adm.com.br"], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.2ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ta2U/06HRfZ6WnvmJUS46K5NCAZTMMecUBkOURD+5h/V0TUcFnxTyQCM+hHljAg9ELUY+ulnXOzHA6OQhdWvFQ==", "admin"=>{"email"=>"adm@adm.com.br", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering admins/sessions/new.html.erb within layouts/application
+  Rendered admins/shared/_links.html.erb (1.6ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 314ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for ::1 at 2020-07-25 23:06:00 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MfNFImE+/VzKHul0jtQA+BIqNzXt+7EkbAwPwQbpj/1Rj+TBOcXrY7DIaINOHLAtrNInyVesKlT7FqIAk8LG9w==", "admin"=>{"email"=>"adm@adm.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "adm@adm.com"], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.2ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MfNFImE+/VzKHul0jtQA+BIqNzXt+7EkbAwPwQbpj/1Rj+TBOcXrY7DIaINOHLAtrNInyVesKlT7FqIAk8LG9w==", "admin"=>{"email"=>"adm@adm.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering admins/sessions/new.html.erb within layouts/application
+  Rendered admins/shared/_links.html.erb (1.2ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 313ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for ::1 at 2020-07-25 23:07:04 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dy3FZr9d9GGBCdk5jH/eK61wYHIzhPyLrCL+CrgPVlcXUWSF56biXvvfWM5Mt27+E4hwjonTZ/s7OFPLLSQfXQ==", "admin"=>{"email"=>"admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "admin@admin.com"], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/admins_backoffice/welcome/index
+Completed 302 Found in 359ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/admins_backoffice/welcome/index" for ::1 at 2020-07-25 23:07:05 -0300
+Processing by AdminsBackoffice::WelcomeController#index as HTML
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/welcome/index.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/welcome/index.html.erb within layouts/admins_backoffice (0.6ms)
+Completed 200 OK in 388ms (Views: 375.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins_backoffice/admins" for ::1 at 2020-07-25 23:07:07 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:26
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (3.8ms)
+Completed 200 OK in 85ms (Views: 71.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admins_backoffice/admins" for ::1 at 2020-07-25 23:09:56 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Admin Load (0.0ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Admin Load (0.0ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Admin Load (0.0ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Admin Load (0.0ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Admin Load (0.0ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Admin Load (0.0ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Admin Load (0.0ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (514.7ms)
+Completed 500 Internal Server Error in 521ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `admin' for #<#<Class:0x00007f14ce267430>:0x00007f14cd5c6e88>
+Did you mean?  @admins):
+    20:                 <th style="width:50px" rowspan="1" colspan="1">#</th>
+    21:                 <th rowspan="1" colspan="1">Email</th>
+    22:                 <th style="width:50px" rowspan="1" colspan="1">
+    23:                   <%= link_to edit_admins_backoffice_admin_path(admin), class:"btn btn-sucess btn-circle btn-sm" do %>
+    24:                     <i class="fas fa-plus"></i>
+    25:                   <% end %>
+    26:                 </th>
+  
+app/views/admins_backoffice/admins/index.html.erb:23:in `_app_views_admins_backoffice_admins_index_html_erb__3522554002555512916_20120'
+Started GET "/admins_backoffice/admins" for ::1 at 2020-07-25 23:10:31 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:30
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (5.2ms)
+Completed 200 OK in 70ms (Views: 67.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admins_backoffice/admins" for ::1 at 2020-07-25 23:10:46 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:30
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (3.7ms)
+Completed 200 OK in 81ms (Views: 76.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admins_backoffice/admins" for ::1 at 2020-07-25 23:11:58 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:30
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (3.7ms)
+Completed 200 OK in 75ms (Views: 71.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rails/info/routes" for ::1 at 2020-07-25 23:15:53 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::InfoController#routes as HTML
+  Rendering /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/railties-5.2.4.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [49 times] (39.2ms)
+  Rendered /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (21.6ms)
+  Rendered /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/railties-5.2.4.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application (115.7ms)
+Completed 200 OK in 216ms (Views: 127.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=new" for ::1 at 2020-07-25 23:16:24 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"new"}
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=crea" for ::1 at 2020-07-25 23:16:43 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"crea"}
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=crea" for ::1 at 2020-07-25 23:16:43 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"crea"}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=create" for ::1 at 2020-07-25 23:16:44 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"create"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=creat" for ::1 at 2020-07-25 23:16:45 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"creat"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=crea" for ::1 at 2020-07-25 23:16:45 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"crea"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=c" for ::1 at 2020-07-25 23:16:46 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"c"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins_backoffice/admins" for ::1 at 2020-07-25 23:25:57 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:30
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (4.8ms)
+Completed 200 OK in 637ms (Views: 610.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admins_backoffice/admins/new" for ::1 at 2020-07-25 23:26:01 -0300
+Processing by AdminsBackoffice::AdminsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/new.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/new.html.erb within layouts/admins_backoffice (237.5ms)
+Completed 500 Internal Server Error in 243ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"admins_backoffice/admins", :id=>nil}, missing required keys: [:id]):
+    42:             <div class="item form-group">
+    43:               <div class="col-md-6 col-sm-6">
+    44:                 <button type="submit" class="btn btn-success">Salvar</button>
+    45:                 <%= link_to 'Resetar', edit_admins_backoffice_admin_path(@admin), class:"btn btn-primary" %>
+    46:                 <button class="btn btn-primary" type="button">Cancelar</button>
+    47:               </div>
+    48:             </div>
+  
+app/views/admins_backoffice/admins/new.html.erb:45:in `block in _app_views_admins_backoffice_admins_new_html_erb__983539271025792911_27420'
+app/views/admins_backoffice/admins/new.html.erb:21:in `_app_views_admins_backoffice_admins_new_html_erb__983539271025792911_27420'
+Started GET "/admins_backoffice/admins/new" for ::1 at 2020-07-25 23:28:26 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by AdminsBackoffice::AdminsController#new as HTML
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/new.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/new.html.erb within layouts/admins_backoffice (3.3ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 1.4ms)
+
+
+  
+SyntaxError (/home/asalves/time-to-answer/app/views/admins_backoffice/admins/new.html.erb:45: syntax error, unexpected ')', expecting `then' or ';' or '\n'
+...append=( if action_name.edit? );@output_buffer.safe_append='
+...                              ^
+/home/asalves/time-to-answer/app/views/admins_backoffice/admins/new.html.erb:47: syntax error, unexpected `end', expecting ')'
+'.freeze;                 end 
+                          ^~~
+/home/asalves/time-to-answer/app/views/admins_backoffice/admins/new.html.erb:53: syntax error, unexpected `end', expecting ')'
+'.freeze;         end 
+                  ^~~
+/home/asalves/time-to-answer/app/views/admins_backoffice/admins/new.html.erb:61: syntax error, unexpected `ensure', expecting ')'
+          ensure
+          ^~~~~~
+/home/asalves/time-to-answer/app/views/admins_backoffice/admins/new.html.erb:63: syntax error, unexpected `end', expecting ')'
+          end
+          ^~~
+):
+  
+app/views/admins_backoffice/admins/new.html.erb:45: syntax error, unexpected ')', expecting `then' or ';' or '\n'
+app/views/admins_backoffice/admins/new.html.erb:47: syntax error, unexpected `end', expecting ')'
+app/views/admins_backoffice/admins/new.html.erb:53: syntax error, unexpected `end', expecting ')'
+app/views/admins_backoffice/admins/new.html.erb:61: syntax error, unexpected `ensure', expecting ')'
+app/views/admins_backoffice/admins/new.html.erb:63: syntax error, unexpected `end', expecting ')'
+Started GET "/admins_backoffice/admins/new" for ::1 at 2020-07-25 23:28:47 -0300
+Processing by AdminsBackoffice::AdminsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/new.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/new.html.erb within layouts/admins_backoffice (1.9ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/asalves/time-to-answer/app/views/admins_backoffice/admins/new.html.erb:45: syntax error, unexpected ')', expecting `then' or ';' or '\n'
+...pend=( if action_name == edit );@output_buffer.safe_append='
+...                              ^
+/home/asalves/time-to-answer/app/views/admins_backoffice/admins/new.html.erb:47: syntax error, unexpected `end', expecting ')'
+'.freeze;                 end 
+                          ^~~
+/home/asalves/time-to-answer/app/views/admins_backoffice/admins/new.html.erb:53: syntax error, unexpected `end', expecting ')'
+'.freeze;         end 
+                  ^~~
+/home/asalves/time-to-answer/app/views/admins_backoffice/admins/new.html.erb:61: syntax error, unexpected `ensure', expecting ')'
+          ensure
+          ^~~~~~
+/home/asalves/time-to-answer/app/views/admins_backoffice/admins/new.html.erb:63: syntax error, unexpected `end', expecting ')'
+          end
+          ^~~
+):
+  
+app/views/admins_backoffice/admins/new.html.erb:45: syntax error, unexpected ')', expecting `then' or ';' or '\n'
+app/views/admins_backoffice/admins/new.html.erb:47: syntax error, unexpected `end', expecting ')'
+app/views/admins_backoffice/admins/new.html.erb:53: syntax error, unexpected `end', expecting ')'
+app/views/admins_backoffice/admins/new.html.erb:61: syntax error, unexpected `ensure', expecting ')'
+app/views/admins_backoffice/admins/new.html.erb:63: syntax error, unexpected `end', expecting ')'
+Started GET "/admins_backoffice/admins/new" for ::1 at 2020-07-25 23:31:18 -0300
+Processing by AdminsBackoffice::AdminsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/new.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/new.html.erb within layouts/admins_backoffice (2.0ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/asalves/time-to-answer/app/views/admins_backoffice/admins/new.html.erb:45: syntax error, unexpected ')', expecting `then' or ';' or '\n'
+...nd=( if action_name == 'edit' );@output_buffer.safe_append='
+...                              ^
+/home/asalves/time-to-answer/app/views/admins_backoffice/admins/new.html.erb:47: syntax error, unexpected `end', expecting ')'
+'.freeze;                 end 
+                          ^~~
+/home/asalves/time-to-answer/app/views/admins_backoffice/admins/new.html.erb:53: syntax error, unexpected `end', expecting ')'
+'.freeze;         end 
+                  ^~~
+/home/asalves/time-to-answer/app/views/admins_backoffice/admins/new.html.erb:61: syntax error, unexpected `ensure', expecting ')'
+          ensure
+          ^~~~~~
+/home/asalves/time-to-answer/app/views/admins_backoffice/admins/new.html.erb:63: syntax error, unexpected `end', expecting ')'
+          end
+          ^~~
+):
+  
+app/views/admins_backoffice/admins/new.html.erb:45: syntax error, unexpected ')', expecting `then' or ';' or '\n'
+app/views/admins_backoffice/admins/new.html.erb:47: syntax error, unexpected `end', expecting ')'
+app/views/admins_backoffice/admins/new.html.erb:53: syntax error, unexpected `end', expecting ')'
+app/views/admins_backoffice/admins/new.html.erb:61: syntax error, unexpected `ensure', expecting ')'
+app/views/admins_backoffice/admins/new.html.erb:63: syntax error, unexpected `end', expecting ')'
+Started GET "/admins_backoffice/admins/new" for ::1 at 2020-07-25 23:31:48 -0300
+Processing by AdminsBackoffice::AdminsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/new.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/new.html.erb within layouts/admins_backoffice (189.8ms)
+Completed 200 OK in 790ms (Views: 786.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admins_backoffice/admins/new" for ::1 at 2020-07-25 23:32:10 -0300
+Processing by AdminsBackoffice::AdminsController#new as HTML
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/new.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/new.html.erb within layouts/admins_backoffice (7.1ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `edit?' for "new":String):
+    42:             <div class="item form-group">
+    43:               <div class="col-md-6 col-sm-6">
+    44:                 <button type="submit" class="btn btn-success">Salvar</button>
+    45:                 <% if action_name.edit? %>
+    46:                   <%= link_to 'Resetar', edit_admins_backoffice_admin_path(@admin), class:"btn btn-primary" %>
+    47:                 <% end %>
+    48:                 <button class="btn btn-primary" type="button">Cancelar</button>
+  
+app/views/admins_backoffice/admins/new.html.erb:45:in `block in _app_views_admins_backoffice_admins_new_html_erb___3258535894115862968_21500'
+app/views/admins_backoffice/admins/new.html.erb:21:in `_app_views_admins_backoffice_admins_new_html_erb___3258535894115862968_21500'
+Started GET "/admins_backoffice/admins/new" for ::1 at 2020-07-25 23:32:24 -0300
+Processing by AdminsBackoffice::AdminsController#new as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/new.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/new.html.erb within layouts/admins_backoffice (3.8ms)
+Completed 200 OK in 65ms (Views: 61.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admins_backoffice/admins/new" for ::1 at 2020-07-25 23:32:45 -0300
+Processing by AdminsBackoffice::AdminsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/new.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/new.html.erb within layouts/admins_backoffice (4.3ms)
+Completed 200 OK in 62ms (Views: 56.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admins_backoffice/admins/new" for ::1 at 2020-07-25 23:36:40 -0300
+Processing by AdminsBackoffice::AdminsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/new.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/new.html.erb within layouts/admins_backoffice (3.0ms)
+Completed 200 OK in 70ms (Views: 66.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admins_backoffice/admins/new" for ::1 at 2020-07-25 23:36:51 -0300
+Processing by AdminsBackoffice::AdminsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/new.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/new.html.erb within layouts/admins_backoffice (8.4ms)
+Completed 200 OK in 62ms (Views: 58.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admins_backoffice/admins/new" for ::1 at 2020-07-25 23:36:53 -0300
+Processing by AdminsBackoffice::AdminsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/new.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/new.html.erb within layouts/admins_backoffice (2.8ms)
+Completed 200 OK in 59ms (Views: 56.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admins_backoffice/admins/new" for ::1 at 2020-07-25 23:37:11 -0300
+Processing by AdminsBackoffice::AdminsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/new.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/new.html.erb within layouts/admins_backoffice (3.7ms)
+Completed 200 OK in 71ms (Views: 65.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admins_backoffice/admins/new" for ::1 at 2020-07-25 23:37:29 -0300
+Processing by AdminsBackoffice::AdminsController#new as HTML
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/new.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/new.html.erb within layouts/admins_backoffice (4.9ms)
+Completed 200 OK in 67ms (Views: 57.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins_backoffice/admins/new" for ::1 at 2020-07-25 23:37:31 -0300
+Processing by AdminsBackoffice::AdminsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/new.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/new.html.erb within layouts/admins_backoffice (3.0ms)
+Completed 200 OK in 64ms (Views: 60.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admins_backoffice/admins/new" for ::1 at 2020-07-25 23:38:12 -0300
+Processing by AdminsBackoffice::AdminsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/new.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/new.html.erb within layouts/admins_backoffice (3.4ms)
+Completed 200 OK in 63ms (Views: 59.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admins_backoffice/admins" for ::1 at 2020-07-25 23:41:17 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.8ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:30
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (3.7ms)
+Completed 200 OK in 628ms (Views: 575.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admins_backoffice/admins/new" for ::1 at 2020-07-25 23:41:20 -0300
+Processing by AdminsBackoffice::AdminsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/new.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/new.html.erb within layouts/admins_backoffice (244.2ms)
+Completed 200 OK in 310ms (Views: 303.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/admins_backoffice/admins" for ::1 at 2020-07-25 23:41:45 -0300
+Processing by AdminsBackoffice::AdminsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8ZAqkIkzpfdiOBGeRGi5BaMOLJrXgnPeb4hvcJG+6ZrDzIAAEYaZxLv88PRjYn4F4RKHajNzkMdgGH8FuOxkEg==", "admin"=>{"email"=>"alves.andre.ds@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:16
+  [1m[36mAdmin Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "admins" WHERE "admins"."email" = ? LIMIT ?[0m  [["email", "alves.andre.ds@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:16
+  [1m[36mAdmin Create (0.4ms)[0m  [1m[32mINSERT INTO "admins" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "alves.andre.ds@gmail.com"], ["encrypted_password", "$2a$12$hiyehLCUFz2rT9gis.2XFOazh8Io7H2Maz22rmuBQBbf8xUXb5mRq"], ["created_at", "2020-07-26 02:41:45.902145"], ["updated_at", "2020-07-26 02:41:45.902145"]]
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:16
+  [1m[35m (79.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:16
+Redirected to http://localhost:3000/admins_backoffice/welcome/index
+Completed 302 Found in 433ms (ActiveRecord: 81.2ms)
+
+
+Started GET "/admins_backoffice/welcome/index" for ::1 at 2020-07-25 23:41:45 -0300
+Processing by AdminsBackoffice::WelcomeController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/welcome/index.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/welcome/index.html.erb within layouts/admins_backoffice (0.4ms)
+Completed 200 OK in 87ms (Views: 79.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admins_backoffice/admins" for ::1 at 2020-07-25 23:41:56 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:30
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (6.6ms)
+Completed 200 OK in 83ms (Views: 79.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admins_backoffice/admins/new" for ::1 at 2020-07-25 23:42:35 -0300
+Processing by AdminsBackoffice::AdminsController#new as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/new.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/new.html.erb within layouts/admins_backoffice (3.6ms)
+Completed 200 OK in 76ms (Views: 72.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/admins_backoffice/admins" for ::1 at 2020-07-25 23:42:40 -0300
+Processing by AdminsBackoffice::AdminsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y+TOzkuUgJnfWpeaOdA+idfTkTaDDQM5nPZ8SAWQc15RuGRe0yG8qgaedvAe2vmJlc86xmf84CCTZmw9LML+1g==", "admin"=>{"email"=>"aalves07@outlook.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:16
+  [1m[36mAdmin Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "admins" WHERE "admins"."email" = ? LIMIT ?[0m  [["email", "aalves07@outlook.com"], ["LIMIT", 1]]
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:16
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:16
+  Rendering admins_backoffice/admins/new.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/new.html.erb within layouts/admins_backoffice (4.1ms)
+Completed 200 OK in 440ms (Views: 79.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/admins_backoffice/admins" for ::1 at 2020-07-25 23:42:57 -0300
+Processing by AdminsBackoffice::AdminsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UNRi8mObjWtATjxeFeDyDK5+6bXp63SyNBYUOOuFz4ViiMhi+y6xWJmK3TQy6jUM7GJCRQ0al6s7hgRNwtdCDQ==", "admin"=>{"email"=>"aalves07@outlook.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:16
+  [1m[36mAdmin Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "admins" WHERE "admins"."email" = ? LIMIT ?[0m  [["email", "aalves07@outlook.com"], ["LIMIT", 1]]
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:16
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:16
+  Rendering admins_backoffice/admins/new.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/new.html.erb within layouts/admins_backoffice (4.5ms)
+Completed 200 OK in 409ms (Views: 75.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/admins_backoffice/admins" for ::1 at 2020-07-25 23:43:22 -0300
+Processing by AdminsBackoffice::AdminsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6FEldD/9oLQMlxCRkp0zTKp1WNGb14dqbVIZdvA48CXaDY/kp0ich9VT8fu1l/RM6GnzIX8mZHNiwgkD2Wp9rQ==", "admin"=>{"email"=>"aalves07@outlook.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:16
+  [1m[36mAdmin Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "admins" WHERE "admins"."email" = ? LIMIT ?[0m  [["email", "aalves07@outlook.com"], ["LIMIT", 1]]
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:16
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:16
+  Rendering admins_backoffice/admins/new.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/new.html.erb within layouts/admins_backoffice (7.5ms)
+Completed 200 OK in 105ms (Views: 96.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admins_backoffice/admins" for ::1 at 2020-07-25 23:46:49 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:30
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (4.5ms)
+Completed 200 OK in 60ms (Views: 55.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admins_backoffice/admins" for ::1 at 2020-07-25 23:48:48 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:30
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (4.1ms)
+Completed 200 OK in 69ms (Views: 63.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admins_backoffice/admins/new" for ::1 at 2020-07-25 23:48:50 -0300
+Processing by AdminsBackoffice::AdminsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/new.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/new.html.erb within layouts/admins_backoffice (7.1ms)
+Completed 200 OK in 71ms (Views: 68.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admins_backoffice/admins" for ::1 at 2020-07-25 23:48:52 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:30
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (3.8ms)
+Completed 200 OK in 78ms (Views: 74.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins_backoffice/admins/new" for ::1 at 2020-07-25 23:48:53 -0300
+Processing by AdminsBackoffice::AdminsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/new.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/new.html.erb within layouts/admins_backoffice (2.9ms)
+Completed 200 OK in 68ms (Views: 58.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/admins_backoffice/admins" for ::1 at 2020-07-25 23:48:55 -0300
+Processing by AdminsBackoffice::AdminsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"siYNv8OX5PE7xgrWo1z1wPYw/2axjEKan2XUy09uysyAeqcvWyLYwuIC67yEVjLAtCxUllV9oYOQ9cS+ZjxHRA==", "admin"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:16
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:16
+  Rendering admins_backoffice/admins/new.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/new.html.erb within layouts/admins_backoffice (6.6ms)
+Completed 200 OK in 71ms (Views: 64.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins_backoffice/admins" for ::1 at 2020-07-25 23:49:01 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:30
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (5.7ms)
+Completed 200 OK in 70ms (Views: 64.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admins_backoffice/admins" for ::1 at 2020-07-25 23:55:36 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:30
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (5.4ms)
+Completed 200 OK in 1294ms (Views: 1265.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admins_backoffice/admins" for ::1 at 2020-07-25 23:55:52 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:30
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (4.8ms)
+Completed 200 OK in 74ms (Views: 70.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admins_backoffice/admins" for ::1 at 2020-07-25 23:55:54 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:30
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (3.7ms)
+Completed 200 OK in 64ms (Views: 60.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admins_backoffice/admins" for ::1 at 2020-07-25 23:58:56 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:30
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (8.4ms)
+Completed 200 OK in 104ms (Views: 98.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admins_backoffice/admins/new" for ::1 at 2020-07-26 00:02:51 -0300
+Processing by AdminsBackoffice::AdminsController#new as HTML
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/new.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/new.html.erb within layouts/admins_backoffice (165.0ms)
+Completed 200 OK in 251ms (Views: 246.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/admins_backoffice/admins" for ::1 at 2020-07-26 00:03:11 -0300
+Processing by AdminsBackoffice::AdminsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jbx6CxDcVbfjcNMniUa2P4Mg5ur2IbNcLoEyKO1H7wQX4NCbiGlphDq0Mk2uTHE/wTxNGhLQUEUhESJdxBVijA==", "admin"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:16
+  [1m[36mAdmin Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "admins" WHERE "admins"."email" = ? LIMIT ?[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:16
+  [1m[36mAdmin Create (0.5ms)[0m  [1m[32mINSERT INTO "admins" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "test@test.com"], ["encrypted_password", "$2a$12$d2vah/WCJWDyFQ.ZA4rJNeBp13wvs4IXoHfCBCBlUgx/x9zNJIj8G"], ["created_at", "2020-07-26 03:03:11.371614"], ["updated_at", "2020-07-26 03:03:11.371614"]]
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:16
+  [1m[35m (96.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:16
+Redirected to http://localhost:3000/admins_backoffice/welcome/index
+Completed 302 Found in 403ms (ActiveRecord: 97.2ms)
+
+
+Started GET "/admins_backoffice/welcome/index" for ::1 at 2020-07-26 00:03:11 -0300
+Processing by AdminsBackoffice::WelcomeController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/welcome/index.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/welcome/index.html.erb within layouts/admins_backoffice (0.5ms)
+Completed 200 OK in 55ms (Views: 51.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admins_backoffice/admins" for ::1 at 2020-07-26 00:03:18 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:30
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (3.6ms)
+Completed 200 OK in 63ms (Views: 59.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins_backoffice/admins/13/edit" for ::1 at 2020-07-26 00:03:21 -0300
+Processing by AdminsBackoffice::AdminsController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:49
+  Rendering admins_backoffice/admins/edit.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/edit.html.erb within layouts/admins_backoffice (3.8ms)
+Completed 200 OK in 74ms (Views: 67.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admins_backoffice/admins/13/edit" for ::1 at 2020-07-26 00:03:28 -0300
+Processing by AdminsBackoffice::AdminsController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:49
+  Rendering admins_backoffice/admins/edit.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/edit.html.erb within layouts/admins_backoffice (3.3ms)
+Completed 200 OK in 76ms (Views: 70.2ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/admins_backoffice/admins/13" for ::1 at 2020-07-26 00:03:44 -0300
+Processing by AdminsBackoffice::AdminsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j42DvcvyNrjLe8ea6Y1pVOC3dOwdJHZlmy4BCefWKoO90SktU0cKixK/JvDOh65UoqvfHPnVlXyUvhF8zoSnCw==", "admin"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "id"=>"13"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:49
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:29
+  [1m[36mAdmin Update (0.3ms)[0m  [1m[33mUPDATE "admins" SET "encrypted_password" = ?, "updated_at" = ? WHERE "admins"."id" = ?[0m  [["encrypted_password", "$2a$12$abo1aAudqn7PJaaIp6Cun.4E2sIj6MUQhJqZN8V2rYY38rbm2dV8e"], ["updated_at", "2020-07-26 03:03:44.607785"], ["id", 13]]
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:29
+  [1m[35m (110.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:29
+Redirected to http://localhost:3000/admins_backoffice/welcome/index
+Completed 302 Found in 418ms (ActiveRecord: 111.0ms)
+
+
+Started GET "/admins_backoffice/welcome/index" for ::1 at 2020-07-26 00:03:44 -0300
+Processing by AdminsBackoffice::WelcomeController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/welcome/index.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/welcome/index.html.erb within layouts/admins_backoffice (0.4ms)
+Completed 200 OK in 60ms (Views: 56.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admins_backoffice/admins" for ::1 at 2020-07-26 00:14:40 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:30
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (3.6ms)
+Completed 200 OK in 63ms (Views: 58.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admins_backoffice/admins/1/edit" for ::1 at 2020-07-26 00:14:42 -0300
+Processing by AdminsBackoffice::AdminsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:49
+  Rendering admins_backoffice/admins/edit.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/edit.html.erb within layouts/admins_backoffice (2.7ms)
+Completed 200 OK in 68ms (Views: 63.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admins_backoffice/admins" for ::1 at 2020-07-26 00:14:48 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:30
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (3.5ms)
+Completed 200 OK in 81ms (Views: 72.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admins_backoffice/admins/new" for ::1 at 2020-07-26 00:14:50 -0300
+Processing by AdminsBackoffice::AdminsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/new.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/new.html.erb within layouts/admins_backoffice (3.2ms)
+Completed 200 OK in 70ms (Views: 65.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admins_backoffice/admins" for ::1 at 2020-07-26 00:14:53 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:30
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (3.5ms)
+Completed 200 OK in 80ms (Views: 75.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admins_backoffice/admins" for ::1 at 2020-07-26 00:16:43 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:30
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (3.6ms)
+Completed 200 OK in 67ms (Views: 63.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rails/info/routes" for ::1 at 2020-07-26 00:29:28 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::InfoController#routes as HTML
+  Rendering /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/railties-5.2.4.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [49 times] (21.0ms)
+  Rendered /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.2ms)
+  Rendered /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/railties-5.2.4.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application (34.3ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins_backoffice/admins" for ::1 at 2020-07-26 00:30:39 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:30
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (6.6ms)
+Completed 200 OK in 537ms (Views: 510.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admins_backoffice/admins/13" for ::1 at 2020-07-26 00:30:47 -0300
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for AdminsBackoffice::AdminsController):
+  
+actionpack (5.2.4.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/admins_backoffice/admins/13" for ::1 at 2020-07-26 00:31:01 -0300
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for AdminsBackoffice::AdminsController):
+  
+actionpack (5.2.4.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/admins_backoffice/admins" for ::1 at 2020-07-26 00:33:28 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:30
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (5.4ms)
+Completed 200 OK in 104ms (Views: 92.8ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/admins_backoffice/admins/13" for ::1 at 2020-07-26 00:33:31 -0300
+Processing by AdminsBackoffice::AdminsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"MABmt9b+u3i8d2d4APSNTCiwg+8f0e1OprPi0M147PkCXMwnTkuHS2WzhhIn/kpMaqwoH/sgDlepI/Kl5CphcQ==", "id"=>"13"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:57
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:36
+  [1m[36mAdmin Destroy (1.5ms)[0m  [1m[31mDELETE FROM "admins" WHERE "admins"."id" = ?[0m  [["id", 13]]
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:36
+  [1m[35m (104.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:36
+Redirected to http://localhost:3000/admins_backoffice/welcome/index
+Completed 302 Found in 117ms (ActiveRecord: 105.9ms)
+
+
+Started GET "/admins_backoffice/welcome/index" for ::1 at 2020-07-26 00:33:32 -0300
+Processing by AdminsBackoffice::WelcomeController#index as HTML
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/welcome/index.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/welcome/index.html.erb within layouts/admins_backoffice (0.4ms)
+Completed 200 OK in 91ms (Views: 88.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins_backoffice/admins" for ::1 at 2020-07-26 00:35:06 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:30
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (8.8ms)
+Completed 200 OK in 85ms (Views: 81.5ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/admins_backoffice/admins/12" for ::1 at 2020-07-26 00:35:15 -0300
+Processing by AdminsBackoffice::AdminsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TPDttlilNwbwHe5un2I8e2gqBnRZLQ3EO3ZJJ+wpEyR+rEcmwBALNSnZDwS4aPt7KjathL3c7t005llSxXuerA==", "id"=>"12"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:57
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:36
+  [1m[36mAdmin Destroy (0.3ms)[0m  [1m[31mDELETE FROM "admins" WHERE "admins"."id" = ?[0m  [["id", 12]]
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:36
+  [1m[35m (112.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:36
+Redirected to http://localhost:3000/admins_backoffice/welcome/index
+Completed 302 Found in 125ms (ActiveRecord: 113.2ms)
+
+
+Started GET "/admins_backoffice/welcome/index" for ::1 at 2020-07-26 00:35:15 -0300
+Processing by AdminsBackoffice::WelcomeController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/welcome/index.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/welcome/index.html.erb within layouts/admins_backoffice (0.5ms)
+Completed 200 OK in 72ms (Views: 68.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admins_backoffice/welcome/index" for ::1 at 2020-07-26 00:47:58 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by AdminsBackoffice::WelcomeController#index as HTML
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/welcome/index.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/welcome/index.html.erb within layouts/admins_backoffice (0.9ms)
+Completed 200 OK in 672ms (Views: 632.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/admins_backoffice/admins" for ::1 at 2020-07-26 00:48:00 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.4ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:30
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (13.3ms)
+Completed 200 OK in 94ms (Views: 89.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admins_backoffice/admins/new" for ::1 at 2020-07-26 00:48:03 -0300
+Processing by AdminsBackoffice::AdminsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/new.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/shared/_form.html.erb (238.1ms)
+  Rendered admins_backoffice/admins/new.html.erb within layouts/admins_backoffice (241.9ms)
+Completed 200 OK in 320ms (Views: 316.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admins_backoffice/admins" for ::1 at 2020-07-26 00:48:11 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:30
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (6.5ms)
+Completed 200 OK in 75ms (Views: 69.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admins_backoffice/admins/1/edit" for ::1 at 2020-07-26 00:48:13 -0300
+Processing by AdminsBackoffice::AdminsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:57
+  Rendering admins_backoffice/admins/edit.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/shared/_form.html.erb (4.5ms)
+  Rendered admins_backoffice/admins/edit.html.erb within layouts/admins_backoffice (6.2ms)
+Completed 200 OK in 82ms (Views: 78.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admins_backoffice/admins/1/edit" for ::1 at 2020-07-26 00:48:16 -0300
+Processing by AdminsBackoffice::AdminsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins_backoffice/admins_controller.rb:57
+  Rendering admins_backoffice/admins/edit.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/shared/_form.html.erb (5.3ms)
+  Rendered admins_backoffice/admins/edit.html.erb within layouts/admins_backoffice (6.8ms)
+Completed 200 OK in 74ms (Views: 68.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admins_backoffice/admins" for ::1 at 2020-07-26 00:48:17 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:30
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (3.9ms)
+Completed 200 OK in 70ms (Views: 65.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admins_backoffice/admins/new" for ::1 at 2020-07-26 00:48:21 -0300
+Processing by AdminsBackoffice::AdminsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/new.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/shared/_form.html.erb (4.5ms)
+  Rendered admins_backoffice/admins/new.html.erb within layouts/admins_backoffice (5.9ms)
+Completed 200 OK in 74ms (Views: 71.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admins_backoffice/admins" for ::1 at 2020-07-26 00:48:36 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/asalves/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:30
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (6.1ms)
+Completed 200 OK in 109ms (Views: 98.2ms | ActiveRecord: 0.5ms)
+
+

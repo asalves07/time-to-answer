@@ -6,6 +6,7 @@
 //= require metismenu/dist/metisMenu
 //= require jquery.easing/jquery.easing
 //= require sb-admin-2.min
+//= require bootstrap-growl-ifightcrime/jquery.bootstrap-growl
 
 
 

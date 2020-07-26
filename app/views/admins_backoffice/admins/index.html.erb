@@ -12,7 +12,11 @@
               <tr role="row">
                 <th style="width:50px" class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 134px;">#</th>
                 <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 208px;">Email</th>
-                <th style="width:50px" class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 208px;"></th>
+                <th style="width:50px" class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 208px;">
+                  <%= link_to new_admins_backoffice_admin_path, class:"btn btn-success btn-circle btn-sm" do %>
+                    <i class="fas fa-plus"></i>
+                  <% end %>
+                </th>
               </tr>
             </thead>
             <tfoot>
@@ -31,9 +35,9 @@
                     <%= link_to edit_admins_backoffice_admin_path(admin), class:"btn btn-primary btn-circle btn-sm" do %>
                       <i class="fas fa-edit"></i>
                     <% end %>
-                    <a href="#" class="btn btn-danger btn-circle btn-sm">
+                    <%= link_to admins_backoffice_admin_path(admin), method: :delete, class:"btn btn-danger btn-circle btn-sm", data: {confirm: "Tem certeza que deseja excluir este admnistrador"} do %>
                       <i class="fas fa-trash"></i>
-                    </a>
+                    <% end %>
                   </td>
                 </tr>
               <% end %>
