@@ -1,0 +1,51 @@
+<div class="row">
+  <div class="col-md-12 col-sm-12 ">
+
+    <% if @question.errors.any? %>
+      <div class="alert alert-danger alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">X</button>
+        
+        <ul>
+          <% @question.errors.full_messages.each do |message| %>
+            <li> <%= message %> </li>
+          <% end %>
+        </ul>
+
+      </div>
+    <% end %>
+
+    <div class="x_panel">
+      <div class="x_content">
+        <br>
+        <%= form_with(model: [:admins_backoffice, @question ], local: true) do |form| %>
+
+          <div id="demo-form2" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
+            <div class="item form-group">
+              <%= form.label :description, class:"col-form-label col-md-3 col-sm-3 label-align"%>
+              <div class="col-md-10 col-sm-10 ">
+                <%= form.text_area :description, class: "form-control required", placeholder: "Novo assunto", rows: 5%>
+              </div>
+            </div>
+            <div class="item form-group">
+              <%= form.label :subject_id, class:"col-form-label col-md-3 col-sm-3 label-align"%>
+              <div class="col-md-10 col-sm-10 ">
+                <%= form.collection_select :subject_id, @subjects, :id, :description, {}, {class: "form-control required"}%>
+              </div>
+            </div>
+            <div class="item form-group">
+              <div class="col-md-6 col-sm-6">
+                <button type="submit" class="btn btn-success">Salvar</button>
+                <% if action_name == 'edit' %>
+                  <%= link_to 'Resetar', edit_admins_backoffice_question_path(@question), class:"btn btn-primary" %>
+                <% end %>
+                <%= link_to 'Cancelar', admins_backoffice_questions_path, class: "btn btn-danger"%>
+              </div>
+            </div>
+          </div>
+
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
