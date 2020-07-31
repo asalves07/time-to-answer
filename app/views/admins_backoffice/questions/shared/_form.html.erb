@@ -18,7 +18,12 @@
       <div class="x_content">
         <br>
         <%= form_with(model: [:admins_backoffice, @question ], local: true) do |form| %>
-
+          <div class="item form-group">
+            <%= form.label :subject_id, class:"col-form-label col-md-3 col-sm-3 label-align"%>
+            <div class="col-md-10 col-sm-10 ">
+              <%= form.collection_select :subject_id, @subjects, :id, :description, {}, {class: "form-control required"}%>
+            </div>
+          </div>
           <div id="demo-form2" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
             <div class="item form-group">
               <%= form.label :description, class:"col-form-label col-md-3 col-sm-3 label-align"%>
@@ -26,13 +31,13 @@
                 <%= form.text_area :description, class: "form-control required", placeholder:  t('messages.form.placeholder.question'), rows: 5%>
               </div>
             </div>
-            <div class="item form-group">
-              <%= form.label :subject_id, class:"col-form-label col-md-3 col-sm-3 label-align"%>
-              <div class="col-md-10 col-sm-10 ">
-                <%= form.collection_select :subject_id, @subjects, :id, :description, {}, {class: "form-control required"}%>
-              </div>
+            <div id = "answers" class="item form-group" style= "margin-left:14px">
+              <%= form.fields_for :answers do |answer| %>
+                <%= render partial: "answer_fields", locals: {f: answer} %>
+              <% end %>
+              <%= link_to_add_association '[Adicionar Alternativas]', form, :answers %>
             </div>
-            <div class="item form-group">
+            <div class="item form-group" >
               <div class="col-md-6 col-sm-6">
                 <button type="submit" class="btn btn-success"><%= t('button.save') %></button>
                 <% if action_name == 'edit' %>
@@ -42,10 +47,10 @@
               </div>
             </div>
           </div>
-
         <% end %>
       </div>
     </div>
+
   </div>
 </div>
 
