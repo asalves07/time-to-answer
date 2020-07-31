@@ -11,8 +11,8 @@
             <thead>
               <tr role="row">
                 <th style="width:30px" class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 134px;">#</th>
-                <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 208px;"><%= @questions.model.human_attribute_name(:description) %></th>
-                <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 208px;"><%= @questions.model.human_attribute_name(:subject)%></th>
+                <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 208px;"><%= translate_attribute(@questions, :description) %></th>
+                <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 208px;"><%= translate_attribute(@questions, :subject)%></th>
                 <th style="width:30px" class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 208px;">
                   <%= link_to new_admins_backoffice_question_path, class:"btn btn-success btn-circle btn-sm" do %>
                     <i class="fas fa-plus"></i>
@@ -23,8 +23,8 @@
             <tfoot>
               <tr>
                 <th style="width:30px" rowspan="1" colspan="1">#</th>
-                <th rowspan="1" colspan="1"><%= @questions.model.human_attribute_name(:description) %></th>
-                <th rowspan="1" colspan="1"><%= @questions.model.human_attribute_name(:subject) %></th>
+                <th rowspan="1" colspan="1"><%= translate_attribute(@questions, :description) %></th>
+                <th rowspan="1" colspan="1"><%= translate_attribute(@questions, :subject) %></th>
                 <th style="width:30px" rowspan="1" colspan="1"></th>
               </tr>
             </tfoot>

@@ -11,7 +11,7 @@
             <thead>
               <tr role="row">
                 <th style="width:50px" class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 134px;">#</th>
-                <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 208px;">Email</th>
+                <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 208px;"><%= translate_attribute(@admins, :email) %></th>
                 <th style="width:50px" class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 208px;">
                   <%= link_to new_admins_backoffice_admin_path, class:"btn btn-success btn-circle btn-sm" do %>
                     <i class="fas fa-plus"></i>
@@ -22,7 +22,7 @@
             <tfoot>
               <tr>
                 <th style="width:50px" rowspan="1" colspan="1">#</th>
-                <th rowspan="1" colspan="1">Email</th>
+                <th rowspan="1" colspan="1"><%= translate_attribute(@admins, :email) %></th>
                 <th style="width:50px" rowspan="1" colspan="1"></th>
               </tr>
             </tfoot>
