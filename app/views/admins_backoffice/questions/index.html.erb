@@ -2,7 +2,7 @@
   <!-- DataTales Example -->
   <div class="card shadow mb-4">
     <div class="card-header py-3">
-      <h6 class="m-0 font-weight-bold text-primary">Listando Questões</h6>
+      <h6 class="m-0 font-weight-bold text-primary"><%= t('messages.listing', model: @questions.model_name.human(count: 2)) %></h6>
     </div>
     <div class="card-body">
       <div class="table-responsive">
@@ -38,7 +38,7 @@
                     <%= link_to edit_admins_backoffice_question_path(question), class:"btn btn-primary btn-circle btn-sm" do %>
                       <i class="fas fa-edit"></i>
                     <% end %>
-                    <%= link_to admins_backoffice_question_path(question), method: :delete, class:"btn btn-danger btn-circle btn-sm", data: {confirm: "Tem certeza que deseja excluir esta questão"} do %>
+                    <%= link_to admins_backoffice_question_path(question), method: :delete, class:"btn btn-danger btn-circle btn-sm", data: {confirm: t('messages.confirm_with', item: question.description.truncate(15))} do %>
                       <i class="fas fa-trash"></i>
                     <% end %>
                   </td>

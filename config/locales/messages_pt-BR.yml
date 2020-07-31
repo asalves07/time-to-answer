@@ -1,0 +1,17 @@
+'pt-BR':
+  messages:
+    listing: Listando %{model}
+    confirm_with: "Tem certeza que deseja excluir %{item}"
+    form:
+      edit: Formulário de edição
+      new: Formulário de adição de %{model}
+      placeholder:
+        email: Email do administrador
+        password: Senha
+        password_confirmation: Senha de confirmação
+        subject: Digite o nova disciplina aqui
+        question: Transcreva a questão aqui
+  button:
+    save: Salvar
+    reset: Redefinir
+    cancel: Cancelar

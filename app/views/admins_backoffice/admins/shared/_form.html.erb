@@ -23,28 +23,28 @@
             <div class="item form-group">
               <%= form.label :email, class:"col-form-label col-md-3 col-sm-3 label-align"%>
               <div class="col-md-6 col-sm-6 ">
-                <%= form.text_field :email, class: "form-control required", placeholder: "Email do administrador"%>
+                <%= form.text_field :email, class: "form-control required", placeholder: t('messages.form.placeholder.email')%>
               </div>
             </div>
             <div class="item form-group">
               <%= form.label :password, class:"col-form-label col-md-3 col-sm-3 label-align required"%>
               <div class="col-md-6 col-sm-6 ">
-                <%= form.password_field :password, class: "form-control required", placeholder:"Senha"%>
+                <%= form.password_field :password, class: "form-control required", placeholder: t('messages.form.placeholder.password')%>
               </div>
             </div>
             <div class="item form-group">
               <%= form.label :password_confirmation, class:"col-form-label col-md-3 col-sm-3 label-align required"%>
               <div class="col-md-6 col-sm-6 ">
-                <%= form.password_field :password_confirmation, class: "form-control required", placeholder:"Senha de confirmação" %>
+                <%= form.password_field :password_confirmation, class: "form-control required", placeholder: t('messages.form.placeholder.password_confirmation') %>
               </div>
             </div>
             <div class="item form-group">
               <div class="col-md-6 col-sm-6">
-                <button type="submit" class="btn btn-success">Salvar</button>
+                <button type="submit" class="btn btn-success"><%= t('button.save') %></button>
                 <% if action_name == 'edit' %>
-                  <%= link_to 'Resetar', edit_admins_backoffice_admin_path(@admin), class:"btn btn-primary" %>
+                  <%= link_to t('button.reset'), edit_admins_backoffice_admin_path(@admin), class:"btn btn-primary" %>
                 <% end %>
-                <%= link_to 'Cancelar', admins_backoffice_admins_path, class: "btn btn-danger"%>
+                <%= link_to t('button.cancel'), admins_backoffice_admins_path, class: "btn btn-danger"%>
               </div>
             </div>
           </div>
