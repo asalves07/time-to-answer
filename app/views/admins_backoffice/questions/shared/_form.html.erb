@@ -31,7 +31,7 @@
                 <%= form.text_area :description, class: "form-control required", placeholder:  t('messages.form.placeholder.question'), rows: 5%>
               </div>
             </div>
-            <div id = "answers" class="item form-group" style= "margin-left:14px">
+            <div id='answers' class="item form-group" style= "margin-left:14px">
               <%= form.fields_for :answers do |answer| %>
                 <%= render partial: "answer_fields", locals: {f: answer} %>
               <% end %>
