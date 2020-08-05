@@ -16,12 +16,13 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 Rails.application.config.assets.precompile += %w( admins_backoffice.js admins_backoffice.css 
                                                   users_backoffice.js users_backoffice.css
                                                   admins_devise.js admins_devise.css
-                                                  users_devise.js users_devise.css)
+                                                  users_devise.js users_devise.css
+                                                  site.js site.css)
 
 # /lib/assets
 Rails.application.config.assets.precompile += %w( sb-admin-2.min.js sb-admin-2.min.css 
                                                   custom.js custom.css 
-                                                  img.jpg )
+                                                  img.jpg  custom_site.css)
 
 # /vendor/assets
 Rails.application.config.assets.precompile += %w( jquery-2.2.3/dist/jquery.js bootstrap4.3/dist/js/bootstrap.bundle.js
