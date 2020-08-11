@@ -1,29 +1,65 @@
-<h2>Sign up</h2>
+<div class="row justify-content-center">
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= render "users/shared/error_messages", resource: resource %>
+  <div class="col-xl-10 col-lg-12 col-md-9">
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <div class="card o-hidden border-0 shadow-lg my-5">
+      <div class="card-body p-0">
+        <!-- Nested Row within Card Body -->
+        <div class="row">
+          <div class="col-lg-6 d-none d-lg-block bg-login-image">
+          </div>
+          <div class="col-lg-6">
+            <div class="p-5">
+              <div class="text-center">
+                <h1><i class="fa fa-graduation-cap"></i> Bem-Vindo ao Time to answer!</h1>
+              </div>
+              <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: {class: "user"}) do |f| %>
+                <div class="form-group">
+                  <%= f.email_field :email, autofocus: true, class: "form-control form-control-user", placeholder: "Digito o endereço de email..." %>
+                </div>
+                <div class="form-group">
+                  <% if @minimum_password_length %>
+                  <em>(<%= @minimum_password_length %> characters minimum)</em>
+                  <% end %><br />
+                  <%= f.password_field :password, class: "form-control form-control-user", placeholder: "Password"%>
+                </div>
+                <div class="form-group">
+                  <%= f.password_field :password_confirmation, class: "form-control form-control-user", placeholder: "Password confimation" %>
+                </div>
+                <% if devise_mapping.rememberable? %>
+                  <div class="form-group">
+                    <div class="custom-control custom-checkbox small">
+                      <%= f.check_box :remember_me, class: "custom-control-input" %>
+                      <%= f.label :remember_me, class: "custom-control-label" %>
+                    </div>
+                  </div>
+                <% end %>
+                <div >
+                  <%= f.submit "Cadastra-se", class: "btn btn-primary btn-user btn-block" %>
+                </div>
+                <hr>
+                <a href="index.html" class="btn btn-google btn-user btn-block">
+                  <i class="fab fa-google fa-fw"></i> Cadastra-se com Google
+                </a>
+                <a href="index.html" class="btn btn-facebook btn-user btn-block">
+                  <i class="fab fa-facebook-f fa-fw"></i> Cadastra-se com Facebook
+                </a>
+              <% end %>
+              <hr>
+              <div class="text-center">
+                <%= render "users/shared/links", class: "small" %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-  </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
+  
 
-<%= render "users/shared/links" %>
+
+
