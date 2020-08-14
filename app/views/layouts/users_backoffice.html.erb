@@ -34,7 +34,11 @@
               </div>
               <div class="profile_info">
                 <span>Seja Bem-vindo,</span>
-                <h2><%= current_user.full_name %></h2>
+                <% if current_user.first_name == nil %>
+                  <h2> :D <h2>
+                <% else %>
+                  <h2><%= current_user.full_name %></h2>
+                <% end %>
               </div>
             </div>
             <!-- /menu profile quick info -->
@@ -211,6 +215,11 @@
           stackup_spacing: 10 // spacing between consecutively stacked growls.
         });
       <% end %>
+    <% end %>
+    <%= javascript_tag do %>
+      $(function() {
+        $('.datepicker').datepicker();
+      });
     <% end %>
   </body>
 </html>
