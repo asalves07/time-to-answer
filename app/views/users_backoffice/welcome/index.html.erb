@@ -1,2 +1,35 @@
-<h1>UsersBackoffice::Welcome#index</h1>
-<p>Find me in app/views/users_backoffice/welcome/index.html.erb</p>
+<h1>Seja Bem Vindo</h1>
+
+
+<div class="animated flipInY col-lg-3 col-md-3 col-sm-6">
+  <div class="tile-stats">
+    <div class="icon"><i class="fa fa-check-circle" style = "color:#ee8523"></i></div>
+    <div class="count"  style = "color:#ee8523"><%= @user_statistic.total_questions %></div>
+    <h3 style = "color:#ee8523">Questões Resolvidas</h3>
+    <p>Total de questões resolvidas.</p>
+  </div>
+</div>
+<div class="animated flipInY col-lg-3 col-md-3 col-sm-6" >
+  <div class="tile-stats">
+    <div class="icon"><i class="fa fa-check-circle" style = "color:#23be87"></i></div>
+    <div class="count" style = "color:#23be87"><%= @user_statistic.right_question %></div>
+    <h3 style = "color:#23be87">Respostas Corretas</h3>
+    <p>Total de resoluções certas</p>
+  </div>
+</div>
+<div class="animated flipInY col-lg-3 col-md-3 col-sm-6">
+  <div class="tile-stats">
+    <div class="icon"><i class="fa fa-times-circle" style = "color:#f1173a"></i></div>
+    <div class="count" style = "color:#f1173a" ><%= @user_statistic.wrong_question %></div>
+    <h3 style = "color:#f1173a">Respostas Erradas</h3>
+    <p>Total de resoluções erradas.</p>
+  </div>
+</div>
+<div class="animated flipInY col-lg-3 col-md-3 col-sm-6 ">
+  <div class="tile-stats">
+    <div class="icon"><i class="fa fa-check-square-o"></i></div>
+    <div class="count"><%= "#{@user_statistic.income}%" %></div>
+    <h3>Percentual de Rendimento</h3>
+    <p>Percentual de acertos.</p>
+  </div>
+</div>
