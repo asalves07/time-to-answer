@@ -28,7 +28,8 @@
             <div class="item form-group">
               <%= form.label :description, class:"col-form-label col-md-3 col-sm-3 label-align"%>
               <div class="col-md-10 col-sm-10 ">
-                <%= form.text_area :description, class: "form-control required", placeholder:  t('messages.form.placeholder.question'), rows: 5%>
+                <%= form.hidden_field :description, class: "form-control required", placeholder:  t('messages.form.placeholder.question'), rows: 5%>
+                <trix-editor input="question_description"></trix-editor>
               </div>
             </div>
             <div id='answers' class="item form-group" style= "margin-left:14px">
